@@ -37,4 +37,10 @@ func generateProject(folderName string, projectChoice string) {
 	default:
 		// clo
 	}
+	command := exec.Command("rm", "-rf", ".git")
+	_, err := command.CombinedOutput()
+	if err != nil {
+		panic(err)
+	}
+	
 }
