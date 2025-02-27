@@ -3,3 +3,9 @@ build:
 
 run: build
 	@./bin/sparky
+
+build-mac:
+	@go build -o ./bin/mac/sparky
+
+run-mac: build-mac
+	@./bin/mac/sparky
