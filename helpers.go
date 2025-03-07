@@ -34,6 +34,12 @@ func generateProject(folderName string, projectChoice string) {
 		if err != nil {
 			panic(err)
 		}
+	case "Python FastApi":
+		command := exec.Command("git", "clone", "https://github.com/Ayobami6/fast_api_starter", ".")
+		_, err := command.CombinedOutput()
+		if err != nil {
+			panic(err)
+		}
 	default:
 		// clo
 	}

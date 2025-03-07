@@ -71,6 +71,7 @@ func initialModel() model {
 		item("Java SpringBoot"),
 		item("NodeJS Nestjs"),
 		item("Python Django"),
+		item("Python FastApi"),
 	}
 
 	// create text input
